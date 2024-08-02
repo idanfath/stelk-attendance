@@ -6,16 +6,12 @@ const routes = [
         name: 'home',
         component: () => import('../views/Home.vue')
     },
+    // 404 page
     {
-        path: '/about',
-        name: 'about',
-        component: () => import('../views/About.vue')
-    },
-    {
-        path: '/store',
-        name: 'store',
-        component: () => import('../views/Store.vue'),
-    },
+        path: '/:pathMatch(.*)*',
+        name: 'not-found',
+        component: () => import('../views/NotFound.vue')
+    }
 ]
 
 const router = createRouter({
