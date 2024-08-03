@@ -1,7 +1,10 @@
 <template>
     <q-header class="header responsive-px text-dark">
         <div class="title tw-font-bold sanimated">
-            <router-link to="/" class="tw-flex tw-items-center ">MEDI<span>CARE</span></router-link>
+            <router-link to="/" class="tw-flex tw-items-center p">
+                <img src="../assets/testicon.png" alt="logo" class="logo">
+                MEDI<span>CARE</span>
+            </router-link>
         </div>
 
         <div class="tw-flex tw-justify-between tw-items-center tw-gap-[1rem] ">
@@ -14,7 +17,7 @@
             <div class="lg:tw-hidden">
                 <slot></slot>
             </div>
-            <button class="max-sm:tw-hidden button-primary tw-ml-2">Hubungi Kami</button>
+            <button class="max-sm:tw-hidden button-primary tw-ml-2" @click="() => {this.$emit('id-pressed', 'contact')}">Hubungi Kami</button>
         </div>
     </q-header>
 </template>
@@ -34,6 +37,7 @@
 
 
 <style scoped>
+    
     .linkparent {
         display: flex;
         justify-content: center;

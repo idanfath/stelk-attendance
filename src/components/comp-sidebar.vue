@@ -1,11 +1,17 @@
 <template>
     <q-drawer>
+        <q-img src="../assets/sidebar/main.webp" alt="logo" class="tw-h-[8rem]"/>
         <div class="tw-my-4">
-            <div class="title">{{title}}</div>
+            <div>
+                <div class="title">
+                    {{title}}
+                </div>
+            </div>
         </div>
         <q-separator horizontal inset></q-separator>
         <q-list class="sanimated">
-            <q-item v-for="link in links" clickable class="sidebar-item" @click="() => {this.$emit('id-pressed', link.id, false)}">
+            <q-item v-for="link in links" clickable class="sidebar-item"
+                @click="() => {this.$emit('id-pressed', link.id, false)}">
                 <q-item-section>
                     <div class=" tw-flex tw-justify-between tw-items-center">
                         <q-item-label>{{link.name}}</q-item-label>
@@ -29,7 +35,6 @@
 
 
 <style scoped>
-
     .sidebar-item:hover .icon {
         transform: translateX(2px);
     }
@@ -37,7 +42,7 @@
     .sidebar-item {
         padding: 0 30px;
     }
-    
+
     .title {
         font-size: 1.5rem;
         padding: 10px;

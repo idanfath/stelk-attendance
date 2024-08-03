@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHr LpR lFf" class="main-layout">
+  <q-layout view="hHr LpR lff" class="main-layout">
     <comp-header :title="title" @id-pressed="scrollTo" :links="links">
       <button @click="sidebar = !sidebar">
         <q-icon name="sym_r_menu" color="dark" size="32px" />
@@ -7,8 +7,9 @@
     </comp-header>
     <comp-sidebar v-model="sidebar" :title="title" :links="links" @id-pressed="scrollTo"></comp-sidebar>
     <q-page-container style="padding: 0;">
-      <router-view></router-view>
+      <router-view @id-pressed="scrollTo" :contactinfo="contactinfo"></router-view>
     </q-page-container>
+    <comp-footer :contactinfo="contactinfo"/>
   </q-layout>
 </template>
 <script>
@@ -21,8 +22,15 @@
           { name: 'Beranda', id: 'home' },
           { name: 'Keunggulan', id: 'keunggulan' },
           { name: 'Tentang', id: 'about' },
-          { name: 'Kontak', id: 'kontak' }
-        ]
+          { name: 'Kontak', id: 'kontak' },
+          { name: 'FAQ', id: 'faq' },
+        ],
+        
+        contactinfo: [
+            { heading: 'Alamat', text: 'Jl. Jend. Sudirman No. 1, Jakarta' },
+            { heading: 'Telepon', text: '+62 812-3456-7890' },
+            { heading: 'Email', text: 'testmail@gmail.com' },
+          ]
       }
     },
     methods: {

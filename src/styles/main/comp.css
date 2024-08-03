@@ -2,3 +2,7 @@
     @apply tw-bg-[var(--primary-btn)] tw-text-white tw-py-3 tw-px-10 tw-text-lg tw-rounded-lg animated hover:tw-bg-[var(--primary-btn-hover)] active:tw-bg-[var(--primary-btn-active)] tw-border-0;
 }
 
+
+.logo {
+    @apply tw-w-[40px] tw-h-[40px] tw-mr-3 max-md:tw-w-[30px] max-md:tw-h-[30px];
+}

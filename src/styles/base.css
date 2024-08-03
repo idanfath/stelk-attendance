@@ -36,3 +36,22 @@ body {
   height: 100px;
   background-color: #f00;
 }
+
+.image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;  
+}
+
+/* image if error */
+.image::before {
+  content: 'Image not found';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f00;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+}

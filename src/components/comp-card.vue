@@ -1,5 +1,5 @@
 <template>
-    <q-card v-if="type === 'default'" class="comp-card">
+    <q-card v-if="type === 'default'" class="comp-card animated">
         <q-card-section class="tw-flex tw-flex-col tw-gap-1">
             <div class="tw-text-2xl tw-mb-2 tw-font-bold tw-flex tw-items-center tw-justify-between">
                 <div>{{heading}}</div>
@@ -35,5 +35,10 @@
         padding: 15px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        @apply lg:tw-bg-slate-50
+    }
+
+    .comp-card:hover {
+        @apply lg:tw-shadow-lg lg:tw-bg-white;
     }
 </style>
