@@ -15,8 +15,9 @@
     </section>
     
     <section>
-
+a
     </section>
+    
   </main>
 
   <div class="page tw-bg-red-200" id="home">
@@ -30,7 +31,7 @@
       return {
         home: {
           text: 'Stelk E-Absensi',
-          mdtext: 'Welcome to',
+          mdtext: 'Welcome to ',
           subtext: 'Pantas, Mudah, dan Cepat'
         }
       }
@@ -43,5 +44,10 @@
     width: 150px;
     height: 150px;
     margin: 0 auto;
+  }
+
+  #home {
+    display: flex;
+    justify-content: space-between;
   }
 </style>

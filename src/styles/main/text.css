@@ -1,4 +1,12 @@
 p, .p {
     color: #575757;
+    margin: 0;
+    padding: 0;
 }
+
+.main-layout {
+    color: var(--dark-text);
+    font-family: var(--font-main);
+}
+
 

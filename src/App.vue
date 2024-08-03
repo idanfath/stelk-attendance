@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHr LpR lFf">
+  <q-layout view="hHr LpR lFf" class="main-layout">
     <comp-header :title="title" @id-pressed="scrollTo" :links="links">
       <button @click="sidebar = !sidebar">
         <q-icon name="sym_r_menu" color="dark" size="32px" />

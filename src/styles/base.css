@@ -8,9 +8,8 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-main: system-ui, -apple-system, inter, sans-serif;
   --dark-text: #3c3c4c;
-  color: #3c3c4c;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
