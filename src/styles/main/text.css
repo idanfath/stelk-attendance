@@ -9,4 +9,7 @@ p, .p {
     font-family: var(--font-main);
 }
 
+.subtext {
+    color: var(--dark-text-sub);
+}
 

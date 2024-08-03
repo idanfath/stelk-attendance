@@ -14,20 +14,24 @@ import '@quasar/extras/fontawesome-v6/fontawesome-v6.css'
 import '@quasar/extras/bootstrap-icons/bootstrap-icons.css'
 import 'quasar/dist/quasar.css'
 
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css/bundle';
 
 createApp(App)
     .use(router)
+    .component('Swiper', Swiper)
+    .component('SwiperSlide', SwiperSlide)
     .use(Quasar, {
         config: {
             brand: {
                 primary: '#027be3',
-                secondary: '#26A69A',
-                accent: '#9C27B0',
-                dark: '#3c3c4c',
-                positive: '#21BA45',
-                negative: '#C10015',
-                info: '#31CCEC',
-                warning: '#F2C037'
+                // secondary: '#26A69A',
+                // accent: '#9C27B0',
+                // dark: '#3c3c4c',
+                // positive: '#21BA45',
+                // negative: '#C10015',
+                // info: '#31CCEC',
+                // warning: '#F2C037'
             }
         }
     })

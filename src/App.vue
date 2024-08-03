@@ -6,7 +6,7 @@
       </button>
     </comp-header>
     <comp-sidebar v-model="sidebar" :title="title" :links="links" @id-pressed="scrollTo"></comp-sidebar>
-    <q-page-container>
+    <q-page-container style="padding: 0;">
       <router-view></router-view>
     </q-page-container>
   </q-layout>
@@ -16,12 +16,12 @@
     data() {
       return {
         sidebar: false,
-        title: 'ATTENDANCE',
+        title: 'MEDICARE',
         links: [
-          { name: 'Home', id: 'home' },
-          { name: 'About', id: 'about' },
-          { name: 'Services', id: 'services' },
-          { name: 'Contact', id: 'contact' }
+          { name: 'Beranda', id: 'home' },
+          { name: 'Keunggulan', id: 'keunggulan' },
+          { name: 'Tentang', id: 'about' },
+          { name: 'Kontak', id: 'kontak' }
         ]
       }
     },
@@ -31,7 +31,7 @@
         // entah kenapa perlu delay
         setTimeout(() => {
           document.getElementById(id).scrollIntoView({ behavior: 'smooth' })
-        }, 1)
+        }, 200)
       }
     }
   }

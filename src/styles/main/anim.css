@@ -1,3 +1,7 @@
 .panimated > *, .animated, .sanimated *{
     transition: all 0.3s ease-in-out;
 }
+
+.hover-pulse-text{
+    @apply hover:tw-text-[var(--primary-text)] hover:tw-animate-pulse animated tw-cursor-pointer;
+}

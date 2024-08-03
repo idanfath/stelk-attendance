@@ -1,9 +1,4 @@
 .button-primary {
-    @apply tw-bg-blue-600 tw-text-white tw-py-3 tw-px-5 tw-rounded-lg animated tw-border-2;
+    @apply tw-bg-[var(--primary-btn)] tw-text-white tw-py-3 tw-px-10 tw-text-lg tw-rounded-lg animated hover:tw-bg-[var(--primary-btn-hover)] active:tw-bg-[var(--primary-btn-active)] tw-border-0;
 }
-.button-primary:hover {
-    @apply tw-bg-blue-700;
-}
-.button-primary:active {
-    @apply tw-bg-purple-700;
-}
+

@@ -10,6 +10,13 @@
 :root {
   --font-main: system-ui, -apple-system, inter, sans-serif;
   --dark-text: #3c3c4c;
+  --dark-text-sub: #57576e;
+  --primary-text: rgb(59 130 246);
+  
+  --primary-btn: rgb(37 99 235);
+  --primary-btn-hover: rgb(59 130 246);
+  --primary-btn-active: rgb(126 34 206);
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,4 +29,10 @@ body {
 
 .page {
   min-height: 500px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #f00;
 }
