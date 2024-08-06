@@ -76,28 +76,29 @@
 
   <main class="responsive-px tw-py-[5rem] tw-flex tw-flex-row-reverse max-md:tw-flex-col tw-bg-blue-50" id="contact">
     <section class="md:tw-pl-[2rem]">
-        <div class="tw-overflow-hidden tw-resize-none tw-max-w-full tw-w-full tw-h-full ">
-          <div id="my-map-canvas" class="tw-h-full tw-w-full tw-max-w-full" ><iframe class="tw-h-full tw-w-full tw-border-0 tw-min-h-[400px]" frameborder="0"
-              src="https://www.google.com/maps/embed/v1/place?q=celebes+digital+solusi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-          </div>
+      <div class="tw-overflow-hidden tw-resize-none tw-max-w-full tw-w-full tw-h-full ">
+        <div id="my-map-canvas" class="tw-h-full tw-w-full tw-max-w-full"><iframe
+            class="tw-h-full tw-w-full tw-border-0 tw-min-h-[400px]" frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=celebes+digital+solusi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
         </div>
+      </div>
     </section>
 
     <section class="max-md:tw-mt-[2rem]">
-            <div class="clamp-title tw-font-bold ">
-              Hubungi Kami
-            </div>
-            <div class="tw-text-xl tw-mt-8">
-              <div class="tw-text-lg">
-                {{contact.subtext}}
-              </div>
-              <div class="tw-mt-4">
-                <div v-for="info in contactinfo" :key="info.heading" class="tw-flex tw-gap-4">
-                  <div class="tw-text-lg tw-font-semibold">{{info.heading}}</div>
-                  <div class="tw-text-lg tw-underline">{{info.text}}</div>
-                </div>
-              </div>
-            </div>
+      <div class="clamp-title tw-font-bold ">
+        Hubungi Kami
+      </div>
+      <div class="tw-text-xl tw-mt-8">
+        <div class="tw-text-lg">
+          {{contact.subtext}}
+        </div>
+        <div class="tw-mt-4">
+          <div v-for="info in contactinfo" :key="info.heading" class="tw-flex tw-gap-4">
+            <div class="tw-text-lg tw-font-semibold">{{info.heading}}</div>
+            <div class="tw-text-lg tw-underline">{{info.text}}</div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -165,10 +166,10 @@
 </script>
 
 <style scoped>
-  #contact > section {
+  #contact>section {
     @apply tw-flex-1;
   }
-  
+
   #my-map-canvas img.text-marker {
     max-width: none !important;
     background: none !important;
@@ -177,12 +178,12 @@
   #keunggulan {
     @apply tw-py-[5rem] tw-bg-blue-100 tw-flex tw-flex-col tw-gap-[2rem]
   }
-  
+
   .clamp-title {
     @apply tw-text-6xl tw-font-bold;
     font-size: clamp(2rem, 5vw, 3rem);
   }
-  
+
   .logo {
     width: 150px;
     height: 150px;
@@ -200,7 +201,7 @@
   }
 
   .hero-image {
-    @apply max-md:!tw-h-[300px];
+    @apply max-md: !tw-h-[300px];
     height: 100%;
     max-height: 600px;
     object-fit: contain;
