@@ -2,7 +2,7 @@
     <q-header class="header responsive-px text-dark">
         <div class="title tw-font-bold sanimated">
             <router-link to="/" class="tw-flex tw-items-center p">
-                <img src="../assets/testicon.png" alt="logo" class="logo">
+                <img src="../assets/headericon.png" alt="logo" class="logo">
                 MEDI<span>CARE</span>
             </router-link>
         </div>
@@ -66,8 +66,10 @@
         z-index: 50;
 
         /* glass */
-        backdrop-filter: blur(15px);
-        background-color: rgba(255, 255, 255, 0.5);
+        /* backdrop-filter: blur(15px); */
+        /* background-color: rgba(255, 255, 255, 0.5); */
+
+        background-color: white;
     }
 
     .dropdown {

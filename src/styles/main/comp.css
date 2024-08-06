@@ -5,4 +5,5 @@
 
 .logo {
     @apply tw-w-[40px] tw-h-[40px] tw-mr-3 max-md:tw-w-[30px] max-md:tw-h-[30px];
+    mix-blend-mode: multiply !important;
 }

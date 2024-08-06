@@ -201,7 +201,7 @@
   }
 
   .hero-image {
-    @apply max-md: !tw-h-[300px];
+    @apply max-md:!tw-h-[300px];
     height: 100%;
     max-height: 600px;
     object-fit: contain;

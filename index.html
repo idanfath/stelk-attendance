@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/testicon.png" />
+    <link rel="icon" type="image/png" href="/headericon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medicare</title>
   </head>
@@ -11,3 +11,15 @@
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+
+<script>
+  const lookawayTitle = "Medicare - Klinik Solution";
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'visible') {
+      document.title = "Medicare";
+    } else {
+      document.title = lookawayTitle;
+    }
+  });
+</script>
